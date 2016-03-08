@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B18CF336-FF16-4914-9A09-0EFB4E8FC323</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlickBee</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0897AE656ABA22659953C7B91CAB18FC6686FABA</key>
+		<string>https://github.com/kunaldada/BlickBee.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlickBee.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0897AE656ABA22659953C7B91CAB18FC6686FABA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kunaldada/BlickBee.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0897AE656ABA22659953C7B91CAB18FC6686FABA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0897AE656ABA22659953C7B91CAB18FC6686FABA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlickBeeProj</string>
+		</dict>
+	</array>
+</dict>
+</plist>

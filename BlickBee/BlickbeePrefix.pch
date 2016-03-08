@@ -1,0 +1,53 @@
+//
+//  BlickbeePrefix.pch
+//  BlickBee
+//
+//  Created by Kunal Chelani on 11/8/15.
+//  Copyright © 2015 Sanchit Kumar Singh. All rights reserved.
+//
+
+#import "CoreGraphics/CGBase.h"
+#import "BlickbeeAppManager.h"
+#import "BaseViewController.h"
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+
+CG_INLINE CGFloat getWidth(UIView *view) {return view.frame.size.width;}
+CG_INLINE CGFloat getHeight(UIView *view) {return view.frame.size.height;}
+CG_INLINE CGFloat getOriginX(UIView *view) {return view.frame.origin.x;}
+CG_INLINE CGFloat getOriginY(UIView *view) {return view.frame.origin.y;}
+
+CG_INLINE CGFloat getScreenWidth() {return [UIScreen mainScreen].bounds.size.width; }
+
+CG_INLINE CGFloat getScreenHeight() {return [UIScreen mainScreen].bounds.size.height; }
+
+static NSString * const kClientId = @"402270419823-pfrm3hqi4o90s795vf5aeds1kkn9mmqb.apps.googleusercontent.com";
+
+
+#define IS_IPHONE4 (([[UIScreen mainScreen] bounds].size.height-480)?NO:YES)
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define IS_IPHONE6 (([[UIScreen mainScreen] bounds].size.height-667)?NO:YES)
+#define IS_IPHONE6_PLUS (([[UIScreen mainScreen] bounds].size.height-736)?NO:YES)
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+#define GAANA_APP_MANAGER_SMS_NOTCONFIGURED @"SMS services are not configured."
+#define GAANA_APP_MANAGER_SENDMESSAGE_COMPOSEFAILED @"Something went wrong, please try after sometime."
+#define GAANA_APP_MANAGER_SENDMESSAGE_UNKNOWN_ERROR @"Sending failed, please try later."
+#define GAANA_APP_MANAGER_SENDMESSAGE_NOTCONFIGURED @"Mail account is not configured."
+#define GAANA_APP_MANAGER_SENDMESSAGE_NOTCONFIGURED @"Mail account is not configured."
+
+
+

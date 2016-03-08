@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeliveryTimeTableViewCell" rowHeight="101" id="KGk-i7-Jjw" customClass="DeliveryTimeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardLayout.png" translatesAutoresizingMaskIntoConstraints="NO" id="yeU-2P-Idj">
+                        <rect key="frame" x="8" y="8" width="300" height="84"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Timings : 9:00 am - 6:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCY-3A-Geu">
+                        <rect key="frame" x="15" y="14" width="285" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="285" id="1cA-Ge-iEh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.87450980389999999" green="0.25490196079999999" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Before 2 pm - Same day delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H47-zd-6Ag">
+                        <rect key="frame" x="15" y="40" width="285" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order After 2 pm - Next day delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVY-vM-0xB">
+                        <rect key="frame" x="15" y="63" width="285" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="AVY-vM-0xB" secondAttribute="trailing" constant="8" id="2i3-kW-Q5w"/>
+                    <constraint firstItem="yeU-2P-Idj" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="BOp-5y-Eoz"/>
+                    <constraint firstItem="H47-zd-6Ag" firstAttribute="top" secondItem="rCY-3A-Geu" secondAttribute="bottom" constant="5" id="Ma1-Ci-mlY"/>
+                    <constraint firstItem="H47-zd-6Ag" firstAttribute="width" secondItem="AVY-vM-0xB" secondAttribute="width" id="R2a-t0-Rm7"/>
+                    <constraint firstItem="yeU-2P-Idj" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="brw-Em-xny"/>
+                    <constraint firstItem="AVY-vM-0xB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="fBk-yt-Kyp"/>
+                    <constraint firstItem="AVY-vM-0xB" firstAttribute="top" secondItem="H47-zd-6Ag" secondAttribute="bottom" constant="5" id="hPZ-gk-vhi"/>
+                    <constraint firstItem="yeU-2P-Idj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iaA-OO-ndw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rCY-3A-Geu" secondAttribute="trailing" constant="8" id="jxT-9I-Rq5"/>
+                    <constraint firstItem="yeU-2P-Idj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kd3-xT-wWy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="H47-zd-6Ag" secondAttribute="trailing" constant="8" id="lFg-P1-arI"/>
+                    <constraint firstItem="rCY-3A-Geu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="scv-mh-04u"/>
+                    <constraint firstItem="H47-zd-6Ag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="uuY-5P-thY"/>
+                    <constraint firstItem="rCY-3A-Geu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="vv7-m7-9MM"/>
+                    <constraint firstItem="rCY-3A-Geu" firstAttribute="width" secondItem="H47-zd-6Ag" secondAttribute="width" id="yRY-6R-q99"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelForDeliveryTimings" destination="rCY-3A-Geu" id="Bdk-JA-Zph"/>
+                <outlet property="labelForNextDayTimings" destination="AVY-vM-0xB" id="t6g-OG-5TJ"/>
+                <outlet property="labelForSameDayTimings" destination="H47-zd-6Ag" id="kqo-fS-qRc"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="222.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cardLayout.png" width="715" height="206"/>
+    </resources>
+</document>

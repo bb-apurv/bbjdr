@@ -229,7 +229,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSIndexPath *idx= indexPath;
-    NSLog(@"%ld",(long)idx.section);
+   // NSLog(@"%ld",(long)idx.section);
     if (indexPath.row==0) {
         if(indexPath.section==1){
             UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

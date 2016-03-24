@@ -31,7 +31,7 @@
     [manager POST:BASE_URL_STRING parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         if ([[responseObject objectForKey:@"response"] isEqualToString:@"success"] && [[responseObject objectForKey:@"response_data"] isKindOfClass:[NSDictionary class]]) {
-            NSLog(@"%@",responseObject);
+        //    NSLog(@"%@",responseObject);
 
             success([self getPromoFromRespons:[responseObject objectForKey:@"response_data"]]);
         }

@@ -166,7 +166,7 @@
     }
 }
 -(void) isOtpVerified:(NSString*)isOtpVerified{
-    NSLog(@"%@ in userinfo", isOtpVerified);
+   // NSLog(@"%@ in userinfo", isOtpVerified);
     [BlickbeeAppManager sharedInstance].isOtpVerified = [isOtpVerified integerValue];
 
 }

@@ -27,6 +27,7 @@
                             // @"password": [inputDict objectForKey:@"password"],
                              @"phone": [inputDict objectForKey:@"phone"],
                              @"access_token": [inputDict objectForKey:@"access_token"],
+                             @"device_id": [inputDict objectForKey:@"device_id"],
                              @"device_type": @"ios"};
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
     manager.responseSerializer.acceptableContentTypes= [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];

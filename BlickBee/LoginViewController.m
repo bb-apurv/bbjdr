@@ -143,12 +143,19 @@
     else{
         [credentialsDict setObject:@"kjhskjhaskjhasdkjsahk" forKey:@"access_token"];
     }
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"devicetoken"]) {
+        [credentialsDict setObject:[[NSUserDefaults standardUserDefaults] objectForKey:@"devicetoken"] forKey:@"device_id"];
+    }
+    else{
+        [credentialsDict setObject:@"kjhskjhaskjhasdkjsahk" forKey:@"device_id"];
+    }
     
     [client signInWithDictionary:credentialsDict WithSuccess:^(User *user) {
         
         if (user.userId && ![user.userId isEqualToString:@""]) {
            
             [BlickbeeAppManager sharedInstance].user.userId = user.userId;
+            [BlickbeeAppManager sharedInstance].user.phone = user.phone;
             
            // [[BlickbeeAppManager sharedInstance] userLoginSuccessfulWith:user];
             if([user.otpStatus isEqualToString:@"1"]){

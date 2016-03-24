@@ -85,12 +85,12 @@
         
     if([[BlickbeeAppManager sharedInstance].offerType isEqualToString:@"1"] ){
         discountedAmount = (totalAmount - discount);
-        NSLog(@"%f",discountedAmount);
+       // NSLog(@"%f",discountedAmount);
         self.labelForDiscount.text=[NSString stringWithFormat:@"%@ %li",@"₹",discount];
     } else {
         discountedAmount = totalAmount - (double)(discount*totalAmount)/100;
         self.labelForDiscount.text=[NSString stringWithFormat:@"%@ %0.1f",@"₹",(double)(discount*totalAmount)/100];
-        NSLog(@"%f",discountedAmount);
+       // NSLog(@"%f",discountedAmount);
 
     }
     self.labelForTotalAmount.text=[NSString stringWithFormat:@"%@ %ld",@"₹",(long)totalAmount];

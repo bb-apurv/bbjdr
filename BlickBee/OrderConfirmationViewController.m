@@ -39,6 +39,7 @@
     [btn setImage:image forState:UIControlStateNormal];
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc]initWithCustomView:btn];
     self.navigationItem.leftBarButtonItem = menuButton;
+    [self emptySelectedProduct];  //To empty Cart after Order is booked
 }
 
 -(void) moveBack{

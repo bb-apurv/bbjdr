@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9F1E2A9E79396D3D89B7FCF8661411AEB18F50FE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0897AE656ABA22659953C7B91CAB18FC6686FABA" : 0,
+    "9F1E2A9E79396D3D89B7FCF8661411AEB18F50FE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B18CF336-FF16-4914-9A09-0EFB4E8FC323",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0897AE656ABA22659953C7B91CAB18FC6686FABA" : "BlickBeeProj",
+    "9F1E2A9E79396D3D89B7FCF8661411AEB18F50FE" : "BlickBee-master\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BlickBee",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BlickBee.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kunaldada\/BlickBee.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0897AE656ABA22659953C7B91CAB18FC6686FABA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bb-apurv\/bbjdr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9F1E2A9E79396D3D89B7FCF8661411AEB18F50FE"
+    }
+  ]
+}

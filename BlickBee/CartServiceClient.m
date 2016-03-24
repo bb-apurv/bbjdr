@@ -23,7 +23,7 @@
         failure(nil);
         return;
     }
-    NSLog(@"%@ id user", user.userId);
+  //  NSLog(@"%@ id user", user.userId);
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];

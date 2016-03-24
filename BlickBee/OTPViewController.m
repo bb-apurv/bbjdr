@@ -25,6 +25,7 @@
     self.resendOTPBtn.userInteractionEnabled=NO;
     self.progressUpdateTimer =[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
     self.navigationController.navigationBar.hidden=YES;
+   // self.otpTextField.delegate = self;
     // Do any additional setup after loading the view.
 }
 
@@ -99,18 +100,18 @@
     
     NSString *otpStr = self.otpTextField.text;
 
-    if (self.user && ![self.user.name isEqualToString:@""]) {
+    if (self.user && ![self.user.phone isEqualToString:@""]) {
         
-        NSString *dummyUser = self.user.name;
+        NSString *dummyUser = self.user.phone;
         dummyUser=[dummyUser stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceCharacterSet]];
         BOOL matchedUser = NO;
         
-        if ([dummyUser rangeOfString:@"test123" options:NSCaseInsensitiveSearch].location == NSNotFound)
+        if ([dummyUser rangeOfString:@"12345" options:NSCaseInsensitiveSearch].location == NSNotFound)
         {
             //not dummy user
             matchedUser=NO;
         }
-        else
+        else if ([dummyUser rangeOfString:@"12345" options:NSCaseInsensitiveSearch].location == 0)
         {
             //dummy user
             matchedUser=YES;

@@ -45,7 +45,7 @@
     [manager POST:BASE_URL_STRING parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
 
         if ([[responseObject objectForKey:@"response"] isEqualToString:@"success"]) {
-            NSLog(@"%@", responseObject);
+       //     NSLog(@"%@", responseObject);
             success([self getRepoFrom:[responseObject objectForKey:@"response_data"]]);
 
         }

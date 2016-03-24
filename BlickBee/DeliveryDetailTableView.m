@@ -175,7 +175,7 @@
         if(indexPath.row==0){
             if([[BlickbeeAppManager sharedInstance].userAddresses objectAtIndex:indexPath.row]){
                 [self.addressrecievedDelegate addressRecived:[[BlickbeeAppManager sharedInstance].userAddresses objectAtIndex:indexPath.row]];
-            NSLog(@"%@",[[BlickbeeAppManager sharedInstance].userAddresses objectAtIndex:indexPath.row]);
+          //  NSLog(@"%@",[[BlickbeeAppManager sharedInstance].userAddresses objectAtIndex:indexPath.row]);
                 addressCellOneColor=YES;
                 [self reloadRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:0 inSection:1]] withRowAnimation:UITableViewRowAnimationNone];
            // if([BlickbeeAppManager sharedInstance].userAddresses.count ==2){

@@ -83,6 +83,11 @@
 
 #pragma mark UISearchBar Delegetes
 
+
+
+
+
+
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     searchedStr=searchBar.text;
     if (![searchedStr isEqualToString:@""]) {
@@ -104,6 +109,9 @@
         }];
     }
 }
+
+
+
 /*
 -(NSMutableArray*) checkProductsRepoForSelectedProductQuantity:(NSMutableArray*) repo{
     NSArray *repoCopy = [NSArray arrayWithArray:repo];

@@ -220,7 +220,7 @@
     [manager POST:BASE_URL_STRING parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         if ([[responseObject objectForKey:@"response"] isEqualToString:@"success"] && [[responseObject objectForKey:@"response_data"] isKindOfClass:[NSArray class]]) {
-            NSLog(@"%@",responseObject);
+         //   NSLog(@"%@",responseObject);
             success([self getFullOrderFor:[responseObject objectForKey:@"response_data"]]);
         }
         else if ([responseObject objectForKey:@"error"]){

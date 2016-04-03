@@ -25,7 +25,14 @@
     self.resendOTPBtn.userInteractionEnabled=NO;
     self.progressUpdateTimer =[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
     self.navigationController.navigationBar.hidden=YES;
-   // self.otpTextField.delegate = self;
+    LoginServiceClient *client = [[LoginServiceClient alloc] init];
+    [client resendOTPWithSuccess:^{
+        
+    } failure:^(NSError *error) {
+        
+    }];
+
+    self.otpTextField.delegate = self;
     // Do any additional setup after loading the view.
 }
 
@@ -88,6 +95,11 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
 }
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
+
 
 - (IBAction)verifyBtnPressed:(id)sender {
     
@@ -222,7 +234,7 @@
     self.resendOTPBtn.layer.borderColor = [UIColor whiteColor].CGColor;
 
     
-    [self.otpTextField becomeFirstResponder];
+   // [self.otpTextField becomeFirstResponder];
 }
 
 - (IBAction)back:(id)sender {
